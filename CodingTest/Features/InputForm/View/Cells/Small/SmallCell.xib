@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="rBQ-zU-pWg" customClass="SmallCell" customModule="CodingTest" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="84"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="rBQ-zU-pWg" id="bAT-5s-zwa">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="83.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LVN-Wm-CkW" userLabel="View - Main">
+                        <rect key="frame" x="5" y="5" width="365" height="73.5"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Please enter your input" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JeV-bP-hNP">
+                                <rect key="frame" x="5" y="15" width="355" height="43.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" priority="999" constant="43" id="328-8s-qwc"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="JeV-bP-hNP" secondAttribute="trailing" constant="5" id="9FK-BQ-7n5"/>
+                            <constraint firstItem="JeV-bP-hNP" firstAttribute="leading" secondItem="LVN-Wm-CkW" secondAttribute="leading" constant="5" id="KX5-46-Nor"/>
+                            <constraint firstItem="JeV-bP-hNP" firstAttribute="top" secondItem="LVN-Wm-CkW" secondAttribute="top" constant="15" id="c1i-u0-TRI"/>
+                            <constraint firstAttribute="bottom" secondItem="JeV-bP-hNP" secondAttribute="bottom" constant="15" id="qw2-5f-7nb"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="LVN-Wm-CkW" secondAttribute="trailing" constant="5" id="7Ge-0J-81R"/>
+                    <constraint firstItem="LVN-Wm-CkW" firstAttribute="top" secondItem="bAT-5s-zwa" secondAttribute="top" constant="5" id="E4N-JB-C6f"/>
+                    <constraint firstAttribute="bottom" secondItem="LVN-Wm-CkW" secondAttribute="bottom" constant="5" id="fZZ-sj-BkB"/>
+                    <constraint firstItem="LVN-Wm-CkW" firstAttribute="leading" secondItem="bAT-5s-zwa" secondAttribute="leading" constant="5" id="s5v-H9-E8m"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="inputTextField" destination="JeV-bP-hNP" id="IdY-nQ-ABx"/>
+                <outlet property="mainView" destination="LVN-Wm-CkW" id="lby-vd-kq5"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

@@ -1,0 +1,44 @@
+PODS:
+  - RxCocoa (4.0.0-beta.1):
+    - RxSwift (~> 4.0.0-beta.1)
+  - RxKeyboard (0.7.0):
+    - RxCocoa (>= 4.0.0-beta.0)
+    - RxSwift (>= 4.0.0-beta.0)
+  - RxSwift (4.0.0-beta.1)
+  - SwiftLint (0.22.0)
+  - Swinject (2.0.0)
+
+DEPENDENCIES:
+  - RxCocoa (= 4.0.0-beta.1)
+  - RxKeyboard
+  - RxSwift (from `https://github.com/ReactiveX/RxSwift.git`, branch `rxswift4.0-swift4.0`)
+  - SwiftLint
+  - Swinject (~> 2.0.0)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - RxCocoa
+    - RxKeyboard
+    - SwiftLint
+    - Swinject
+
+EXTERNAL SOURCES:
+  RxSwift:
+    :branch: rxswift4.0-swift4.0
+    :git: https://github.com/ReactiveX/RxSwift.git
+
+CHECKOUT OPTIONS:
+  RxSwift:
+    :commit: aacfcc894bd3bc3ea1b03d483720973ea0e02905
+    :git: https://github.com/ReactiveX/RxSwift.git
+
+SPEC CHECKSUMS:
+  RxCocoa: ca6cc0f4453145d90002d80df8f9c83dd8fb7338
+  RxKeyboard: d7b65fd85347c2ec214d21c95537dadc62d3b9af
+  RxSwift: 9488787dfac649ffc1c4fddf3a3b4d6823d0b392
+  SwiftLint: 1134786caedd2caab0560d2f36b76414a5a56808
+  Swinject: 2e964a80d70ab09b3949c99032711f89147bfd60
+
+PODFILE CHECKSUM: 84302d4c0438fdc521c9641a6744118070f97113
+
+COCOAPODS: 1.7.2

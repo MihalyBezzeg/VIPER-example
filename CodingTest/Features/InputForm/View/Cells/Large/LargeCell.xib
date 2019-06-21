@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="124" id="qQj-hR-eoO" customClass="LargeCell" customModule="CodingTest" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="220"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="qQj-hR-eoO" id="M5E-fZ-edJ">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="219.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r2l-f0-AUA" userLabel="View - Main">
+                        <rect key="frame" x="21" y="41" width="333" height="138"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Please enter your input" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hay-S2-TBO">
+                                <rect key="frame" x="0.0" y="42" width="333" height="54"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" priority="999" constant="43" id="hYO-Bk-2oQ"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="0.33333333329999998" alpha="0.40000000000000002" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="hay-S2-TBO" secondAttribute="trailing" id="3oO-Tp-MK9"/>
+                            <constraint firstItem="hay-S2-TBO" firstAttribute="top" secondItem="r2l-f0-AUA" secondAttribute="top" constant="42" id="7cB-Ge-kau"/>
+                            <constraint firstItem="hay-S2-TBO" firstAttribute="leading" secondItem="r2l-f0-AUA" secondAttribute="leading" id="kDf-vL-bd7"/>
+                            <constraint firstAttribute="bottom" secondItem="hay-S2-TBO" secondAttribute="bottom" constant="42" id="zOa-wI-MmU"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstAttribute="trailingMargin" secondItem="r2l-f0-AUA" secondAttribute="trailing" constant="5" id="6Ql-x3-ohc"/>
+                    <constraint firstItem="r2l-f0-AUA" firstAttribute="leading" secondItem="M5E-fZ-edJ" secondAttribute="leadingMargin" constant="5" id="Dh6-5z-p7M"/>
+                    <constraint firstItem="r2l-f0-AUA" firstAttribute="top" secondItem="M5E-fZ-edJ" secondAttribute="topMargin" constant="30" id="Dv1-2p-AHY"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="r2l-f0-AUA" secondAttribute="bottom" constant="30" id="LDv-ZM-sty"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="inputTextField" destination="hay-S2-TBO" id="7zK-dg-ITR"/>
+                <outlet property="mainView" destination="r2l-f0-AUA" id="ckR-7F-H1c"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>
